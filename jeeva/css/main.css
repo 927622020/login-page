@@ -1,0 +1,57 @@
+body {
+  font: 18px "Montserrat", "Microsoft YaHei UI Light", "sans-serif" !important;
+  line-height: 1.5 !important;
+}
+
+h1, h2 { letter-spacing: 8px; }
+
+h3 { letter-spacing: 4px; }
+
+#navigation ul {
+  font: bold 12px "Montserrat", "Microsoft YaHei UI Light", "sans-serif";
+  letter-spacing: 1.5px;
+}
+
+#navigation a:hover { color: rgba(255, 255, 255, 1); }
+
+.card:hover { box-shadow: 2rem 0 8rem rgba(0, 0, 0, 0.2); }
+
+.logo-lg { font-size: 200px !important; }
+
+.logo { font-size: 75px !important; }
+
+.logo-sm { font-size: 40px !important; }
+
+.googleMap { height: 600px; }
+
+.slideanim { visibility: hidden; }
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
